@@ -8,7 +8,7 @@ client.on('ready', async () => {
     const channel = await client.channels.fetch(channelID);
     if (channel.type !== 'voice') {
         return;
-    }.
+    }
 
     const connection = await channel.join();
     const dispatcher = connection.play('https://streamer.radio.co/s06b196587/listen');
