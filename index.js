@@ -2,7 +2,7 @@ require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const channelID = process.env.CHANNEL_ID;
-const token = process.env.DISCORD_APP_TOKEN;
+const token = process.env.DISCORD_TOKEN;
 
 client.on('ready', async () => {
     const channel = await client.channels.fetch(channelID);
